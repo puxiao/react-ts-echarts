@@ -1,0 +1,60 @@
+$gap-size:4px;
+
+.main-grid {
+    display: grid;
+    height: inherit;
+    padding: $gap-size*4 0 $gap-size*4 $gap-size*4;
+    grid-template-rows: calc(10% - #{$gap-size}*5) repeat(4, calc(30% - #{$gap-size}*5));
+    grid-template-columns: repeat(4, calc(25% - #{$gap-size}*4));
+    gap: $gap-size*4;
+    grid-auto-flow: row;
+    grid-template-areas: 'a a a a'
+        'b d d e'
+        'c d d f'
+        'g h i j';
+}
+
+.grid-item {
+    width: inherit;
+    background-color: rgba($color: #092745, $alpha: .3);
+}
+
+.top-bar {
+    grid-area: a;
+}
+
+.left-one {
+    grid-area: b;
+}
+
+.left-two {
+    grid-area: c;
+}
+
+.left-three {
+    grid-area: g;
+}
+
+.mid-one {
+    grid-area: d;
+}
+
+.mid-two {
+    grid-area: h
+}
+
+.mid-three {
+    grid-area: i;
+}
+
+.right-one {
+    grid-area: e;
+}
+
+.right-two {
+    grid-area: f;
+}
+
+.right-three {
+    grid-area: j;
+}
