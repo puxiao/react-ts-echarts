@@ -4,7 +4,7 @@
 
 
 
-**在线演示地址：** https://puxiao.com/demo
+**在线演示地址：** https://www.puxiao.com/demo/data-visualization-by-echarts/
 
 
 
